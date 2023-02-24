@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 827d6487c99326744b1b9b505a0faaae, type: 3}
+  m_Name: Fructose
+  m_EditorClassIdentifier: 
+  items:
+  - element: {fileID: 11400000, guid: 685382aa5c2ad114dac0f2a852eb8757, type: 2}
+    amount: 6
+  - element: {fileID: 11400000, guid: 7455efbbb4511fb4b849052b8ab851de, type: 2}
+    amount: 12
+  - element: {fileID: 11400000, guid: ea3de2a8813d7aa478f882fc6b9188c9, type: 2}
+    amount: 6
+  output: {fileID: 11400000, guid: 6edfc3890979a34448862094eba1d638, type: 2}
+  craftTime: 10

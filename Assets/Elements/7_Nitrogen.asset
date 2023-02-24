@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d579fb5cf3dc524ea89469068c0fb06, type: 3}
+  m_Name: 7_Nitrogen
+  m_EditorClassIdentifier: 
+  id: 4
+  symbol: N
+  name: Nitrogen
+  sellValue: 1
+  buyCost: 0
+  cpkHexColor: {r: 0.1882353, g: 0.3137255, b: 0.972549, a: 1}
+  glasswarePrefab: {fileID: 3516359054223551373, guid: 93a2c0e05f050f34189c9ad3143675e4, type: 3}
+  glow: 1
+  metallic: 0
+  standardState: 2
+  density: 0.001251
+  atomicMass: 14.0067
+  atomicNumber: 7
+  boilingPoint: 77
+  meltingPoint: 63
+  ionizationEnergy: 1402
+  electronicConfiguration: '[He] 2s2 2p3'
+  groupBlock: nonmetal
+  yearDiscovered: 1772

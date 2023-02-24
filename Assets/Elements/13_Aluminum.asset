@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d579fb5cf3dc524ea89469068c0fb06, type: 3}
+  m_Name: 13_Aluminum
+  m_EditorClassIdentifier: 
+  id: 6
+  symbol: Al
+  name: Aluminum
+  sellValue: 10
+  buyCost: 0
+  cpkHexColor: {r: 0.7490196, g: 0.6509804, b: 0.6509804, a: 1}
+  glasswarePrefab: {fileID: 3145865508871297439, guid: 922f789e20526da4fa87d7e17382b011, type: 3}
+  glow: 0
+  metallic: 1
+  standardState: 0
+  density: 2.7
+  atomicMass: 26.981539
+  atomicNumber: 13
+  boilingPoint: 2792
+  meltingPoint: 933
+  ionizationEnergy: 578
+  electronicConfiguration: '[Ne] 3s2 3p1'
+  groupBlock: metal
+  yearDiscovered: Ancient

@@ -1,0 +1,16 @@
+newmtl Brick
+Kd 0.3018868 0.09825561 0.09825561
+d 1
+
+newmtl White
+Kd 1 1 1
+d 1
+
+newmtl Test
+Kd 1 0 0
+d 1
+
+newmtl FurnaceMat
+Kd 0.1792453 0.1792453 0.1792453
+d 1
+
