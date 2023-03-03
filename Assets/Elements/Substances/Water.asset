@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 14
   symbol: H2O
   name: Water
-  sellValue: 4
+  sellValue: 0
   buyCost: 0
   cpkHexColor: {r: 0.5424528, g: 0.9376638, b: 1, a: 1}
   glasswarePrefab: {fileID: 68830811536647386, guid: 45fd9ff005407f44c86936d43c70f5ef, type: 3}

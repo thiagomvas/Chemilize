@@ -16,7 +16,7 @@ MonoBehaviour:
   symbol: N
   name: Nitrogen
   sellValue: 1
-  buyCost: 0
+  buyCost: 10
   cpkHexColor: {r: 0.1882353, g: 0.3137255, b: 0.972549, a: 1}
   glasswarePrefab: {fileID: 3516359054223551373, guid: 93a2c0e05f050f34189c9ad3143675e4, type: 3}
   glow: 1

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d579fb5cf3dc524ea89469068c0fb06, type: 3}
   m_Name: Propane
   m_EditorClassIdentifier: 
-  id: 9999
+  id: 22
   symbol: C3H8
   name: Propane
-  sellValue: 500
-  buyCost: 1000
+  sellValue: 300
+  buyCost: 550
   cpkHexColor: {r: 0.88235295, g: 0.4392157, b: 0.33333334, a: 1}
   glasswarePrefab: {fileID: 4305833741907527282, guid: 71aac4ecf36eab44fb65ed4d6df9faa8, type: 3}
   glow: 0

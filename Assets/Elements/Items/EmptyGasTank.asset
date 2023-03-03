@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d579fb5cf3dc524ea89469068c0fb06, type: 3}
   m_Name: EmptyGasTank
   m_EditorClassIdentifier: 
-  id: 9999
+  id: 19
   symbol: 
   name: Empty Gas Tank
   sellValue: 200
-  buyCost: 350
-  cpkHexColor: {r: 0, g: 0, b: 0, a: 0}
+  buyCost: 250
+  cpkHexColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   glasswarePrefab: {fileID: 4305833741907527282, guid: 71aac4ecf36eab44fb65ed4d6df9faa8, type: 3}
   glow: 0
-  metallic: 0
+  metallic: 1
   standardState: 0
   density: 0
   atomicMass: 0

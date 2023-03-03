@@ -16,7 +16,7 @@ MonoBehaviour:
   symbol: Al
   name: Aluminum
   sellValue: 10
-  buyCost: 0
+  buyCost: 25
   cpkHexColor: {r: 0.7490196, g: 0.6509804, b: 0.6509804, a: 1}
   glasswarePrefab: {fileID: 3145865508871297439, guid: 922f789e20526da4fa87d7e17382b011, type: 3}
   glow: 0

@@ -12,8 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 827d6487c99326744b1b9b505a0faaae, type: 3}
   m_Name: EmptyGasTank
   m_EditorClassIdentifier: 
+  displayName: Empty Gas Tank
   items:
   - element: {fileID: 11400000, guid: f2e84a556e5409742ada51e4aeb892c2, type: 2}
     amount: 2
-  output: {fileID: 11400000, guid: e689fc493654b4545ac8e043648a5231, type: 2}
+  outputs:
+  - element: {fileID: 11400000, guid: e689fc493654b4545ac8e043648a5231, type: 2}
+    amount: 1
   craftTime: 30
+  madeInMachine: {fileID: 11400000, guid: affa02e4e25eff24292fae9887ea4ee6, type: 2}
+  tree: 0
+  levelReq: 0
+  isObject: 0
+  objectOutput: {fileID: 0}

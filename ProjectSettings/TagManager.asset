@@ -14,7 +14,7 @@ TagManager:
   - Structure
   - Tile
   - Ground
-  - 
+  - IgnoreCollision
   - 
   - 
   - 

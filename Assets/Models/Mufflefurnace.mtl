@@ -6,11 +6,7 @@ newmtl FurnaceMat
 Kd 0.1792453 0.1792453 0.1792453
 d 1
 
-newmtl Gray
-Kd 0.4150943 0.4150943 0.4150943
-d 1
-
-newmtl Test
+newmtl redGlow
 Kd 1 0 0
 d 1
 

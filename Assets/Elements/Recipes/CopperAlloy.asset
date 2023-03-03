@@ -12,8 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 827d6487c99326744b1b9b505a0faaae, type: 3}
   m_Name: CopperAlloy
   m_EditorClassIdentifier: 
+  displayName: Copper Alloy
   items:
   - element: {fileID: 11400000, guid: 0cedec55d4b782b44ac013c600ec2e0a, type: 2}
     amount: 2
-  output: {fileID: 11400000, guid: 307d0e07baad6b74c87f014d48d74466, type: 2}
+  outputs:
+  - element: {fileID: 11400000, guid: 307d0e07baad6b74c87f014d48d74466, type: 2}
+    amount: 1
   craftTime: 20
+  madeInMachine: {fileID: 11400000, guid: 7f8267baaa042694c8e63a5d6f79fda4, type: 2}
+  tree: 0
+  levelReq: 0
+  isObject: 0
+  objectOutput: {fileID: 0}

@@ -16,7 +16,7 @@ MonoBehaviour:
   symbol: H
   name: Hydrogen
   sellValue: 1
-  buyCost: 1
+  buyCost: 10
   cpkHexColor: {r: 1, g: 1, b: 1, a: 1}
   glasswarePrefab: {fileID: 3516359054223551373, guid: 93a2c0e05f050f34189c9ad3143675e4, type: 3}
   glow: 1

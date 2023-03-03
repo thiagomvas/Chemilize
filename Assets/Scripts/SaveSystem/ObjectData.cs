@@ -1,4 +1,4 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,4 +17,12 @@ public class ObjectData
         this.index = index;
         this.id = id;
     }
+}
+
+[System.Serializable]
+public class PipeData
+{
+    public int index;
+    public Vector3 input;
+    public Vector3 output;
 }

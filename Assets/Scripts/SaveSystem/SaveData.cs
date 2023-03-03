@@ -29,15 +29,15 @@ public class SaveData
 
     //Data i wish to save
     public int currency = 500;
+    public int chemiPoints;
     public int amountOwed;
+    public int energyUnits;
     public float playtime = 0;
+    
+    public int productionEfficiencyLevel = 0;
+    public int extractionLevel = 0;
+    public int energyEfficiencyLevel = 0;
     public List<ObjectData> objects = new List<ObjectData>();
-
-
-
-    public List<StorageData> storage = new List<StorageData>();
-    public List<GridData> grids = new List<GridData>();
-    public List<BarrierData> barriers = new List<BarrierData>();
-
+    public List<PipeData> pipePositions = new List<PipeData>();
 }
 

@@ -12,10 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 827d6487c99326744b1b9b505a0faaae, type: 3}
   m_Name: Steel
   m_EditorClassIdentifier: 
+  displayName: Steel
   items:
-  - element: {fileID: 11400000, guid: 307d0e07baad6b74c87f014d48d74466, type: 2}
-    amount: 2
+  - element: {fileID: 11400000, guid: 9226ee5449ff9484b90dad6a3bdabebf, type: 2}
+    amount: 1
   - element: {fileID: 11400000, guid: 21c39d70b30c82841a3ae7634ca393f7, type: 2}
     amount: 5
-  output: {fileID: 11400000, guid: 4c9ece673fd73bc44a53f88fa99d58fd, type: 2}
+  outputs:
+  - element: {fileID: 11400000, guid: 4c9ece673fd73bc44a53f88fa99d58fd, type: 2}
+    amount: 1
   craftTime: 30
+  madeInMachine: {fileID: 11400000, guid: affa02e4e25eff24292fae9887ea4ee6, type: 2}
+  tree: 0
+  levelReq: 0
+  isObject: 0
+  objectOutput: {fileID: 0}

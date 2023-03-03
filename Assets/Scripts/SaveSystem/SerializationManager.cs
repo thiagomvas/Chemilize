@@ -9,6 +9,8 @@ public static class SerializationManager
     public static string dir = Application.persistentDataPath + "/saves/";
     public static bool SaveGame(string saveName, object saveData)
     {
+        EventManager.onSave?.Invoke();
+
         if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
 
 
@@ -61,7 +63,7 @@ public static class SerializationManager
         if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
 
         File.Delete(dir + saveName);
-
+        SaveData.Current = new SaveData();
         if (!File.Exists(dir + saveName)) return true;
         else return false;
     }

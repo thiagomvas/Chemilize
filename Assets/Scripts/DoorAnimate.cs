@@ -6,6 +6,7 @@ public class DoorAnimate : MonoBehaviour, IInteractable
 {
     [SerializeField] private int degrees;
     [SerializeField] private float duration;
+    [SerializeField] private Vector3 forward = Vector3.forward;
     bool isOpen;
     bool rotate = false;
     Quaternion targetRot;
@@ -25,7 +26,7 @@ public class DoorAnimate : MonoBehaviour, IInteractable
         {
             targetRot = this.transform.rotation;
             degrees *= -1;
-            targetRot *= Quaternion.AngleAxis(degrees, Vector3.forward);
+            targetRot *= Quaternion.AngleAxis(degrees, forward);
             rotate = true;
             yield return new WaitForSeconds(duration);
             rotate = false;

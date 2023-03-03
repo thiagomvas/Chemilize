@@ -15,8 +15,8 @@ MonoBehaviour:
   id: 13
   symbol: Fe5C4
   name: Steel
-  sellValue: 120
-  buyCost: 0
+  sellValue: 250
+  buyCost: 500
   cpkHexColor: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
   glasswarePrefab: {fileID: 7888804797130142977, guid: 27390b50ac9b0034d9b53862d142d220, type: 3}
   glow: 0

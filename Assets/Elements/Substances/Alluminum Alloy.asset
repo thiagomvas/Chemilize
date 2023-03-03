@@ -16,7 +16,7 @@ MonoBehaviour:
   symbol: Al2Cu2
   name: Alluminum Alloy
   sellValue: 75
-  buyCost: 0
+  buyCost: 100
   cpkHexColor: {r: 0.7490196, g: 0.6509804, b: 0.6509804, a: 1}
   glasswarePrefab: {fileID: 7888804797130142977, guid: 27390b50ac9b0034d9b53862d142d220, type: 3}
   glow: 0

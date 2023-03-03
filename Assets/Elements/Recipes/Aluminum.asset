@@ -12,8 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 827d6487c99326744b1b9b505a0faaae, type: 3}
   m_Name: Aluminum
   m_EditorClassIdentifier: 
+  displayName: Raw Aluminum
   items:
   - element: {fileID: 11400000, guid: d3d7645eb1a3f714a8eb93d691c890ef, type: 2}
     amount: 3
-  output: {fileID: 11400000, guid: c70e7d7e00c5cfb4eafc751c10c7bf45, type: 2}
+  outputs:
+  - element: {fileID: 11400000, guid: c70e7d7e00c5cfb4eafc751c10c7bf45, type: 2}
+    amount: 1
   craftTime: 10
+  madeInMachine: {fileID: 11400000, guid: 7f8267baaa042694c8e63a5d6f79fda4, type: 2}
+  tree: 0
+  levelReq: 0
+  isObject: 0
+  objectOutput: {fileID: 0}

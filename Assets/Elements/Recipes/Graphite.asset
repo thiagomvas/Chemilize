@@ -12,8 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 827d6487c99326744b1b9b505a0faaae, type: 3}
   m_Name: Graphite
   m_EditorClassIdentifier: 
+  displayName: Graphite
   items:
   - element: {fileID: 11400000, guid: 685382aa5c2ad114dac0f2a852eb8757, type: 2}
     amount: 12
-  output: {fileID: 11400000, guid: 9226ee5449ff9484b90dad6a3bdabebf, type: 2}
+  outputs:
+  - element: {fileID: 11400000, guid: 9226ee5449ff9484b90dad6a3bdabebf, type: 2}
+    amount: 1
   craftTime: 10
+  madeInMachine: {fileID: 11400000, guid: 7f8267baaa042694c8e63a5d6f79fda4, type: 2}
+  tree: 0
+  levelReq: 0
+  isObject: 0
+  objectOutput: {fileID: 0}

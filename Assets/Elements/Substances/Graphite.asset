@@ -15,8 +15,8 @@ MonoBehaviour:
   id: 12
   symbol: C12
   name: Graphite
-  sellValue: 16
-  buyCost: 0
+  sellValue: 50
+  buyCost: 100
   cpkHexColor: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
   glasswarePrefab: {fileID: 3516359054223551373, guid: 93a2c0e05f050f34189c9ad3143675e4, type: 3}
   glow: 0

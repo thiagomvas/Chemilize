@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 827d6487c99326744b1b9b505a0faaae, type: 3}
+  m_Name: Electrolyzer
+  m_EditorClassIdentifier: 
+  displayName: Electrolyzer
+  items:
+  - element: {fileID: 11400000, guid: 4c9ece673fd73bc44a53f88fa99d58fd, type: 2}
+    amount: 1
+  - element: {fileID: 11400000, guid: a9f5adc92716d1b488125a8309bc39b0, type: 2}
+    amount: 1
+  - element: {fileID: 11400000, guid: 307d0e07baad6b74c87f014d48d74466, type: 2}
+    amount: 3
+  outputs: []
+  craftTime: 60
+  madeInMachine: {fileID: 0}
+  tree: 0
+  levelReq: 0
+  isObject: 1
+  objectOutput: {fileID: 11400000, guid: 066aba0f2b5af7545aae87bf3e31c7ad, type: 2}

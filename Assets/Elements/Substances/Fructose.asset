@@ -16,7 +16,7 @@ MonoBehaviour:
   symbol: C6H12O6
   name: Fructose
   sellValue: 32
-  buyCost: 0
+  buyCost: 64
   cpkHexColor: {r: 1, g: 1, b: 1, a: 1}
   glasswarePrefab: {fileID: 68830811536647386, guid: 45fd9ff005407f44c86936d43c70f5ef, type: 3}
   glow: 0

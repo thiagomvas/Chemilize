@@ -16,7 +16,7 @@ MonoBehaviour:
   symbol: C
   name: Carbon
   sellValue: 1
-  buyCost: 3
+  buyCost: 10
   cpkHexColor: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
   glasswarePrefab: {fileID: 3516359054223551373, guid: 93a2c0e05f050f34189c9ad3143675e4, type: 3}
   glow: 0

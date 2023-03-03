@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 827d6487c99326744b1b9b505a0faaae, type: 3}
+  m_Name: AluminumRack
+  m_EditorClassIdentifier: 
+  displayName: Aluminum Rack
+  items:
+  - element: {fileID: 11400000, guid: f2e84a556e5409742ada51e4aeb892c2, type: 2}
+    amount: 3
+  outputs: []
+  craftTime: 60
+  madeInMachine: {fileID: 11400000, guid: 1cff321d5bbb92a409cd63d24093fcb7, type: 2}
+  tree: 0
+  levelReq: 0
+  isObject: 1
+  objectOutput: {fileID: 11400000, guid: 64456db546cdf4c4ea5ebb2d9d8cd269, type: 2}
