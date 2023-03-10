@@ -83,8 +83,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    index: -1
-    id: -1
+    index: -2
+    id: -2
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 0}
     settingsIndex: -1

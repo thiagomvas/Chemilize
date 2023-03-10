@@ -45,11 +45,11 @@ public class PlayerInteract : MonoBehaviour
         if(interactable != null && heldObj == null)
         {
             //Primary Interact
-            if (controls.Player.Interact.WasPressedThisFrame()             
+            if (controls.Player.Interact.WasPerformedThisFrame()             
                 && !PlayerInputManager.Instance.BuildingToolOn) interactable.Interact();
 
             //Secondary Interact
-            if (controls.Player.SecondaryInteract.WasPressedThisFrame() 
+            if (controls.Player.SecondaryInteract.WasPerformedThisFrame() 
                 && !PlayerInputManager.Instance.BuildingToolOn) interactable.SecondaryInteract();
         }
 
@@ -65,6 +65,7 @@ public class PlayerInteract : MonoBehaviour
         if (heldObj != null)
         {
             if (controls.Player.Interact.WasPressedThisFrame()) rotateToNormal = true;
+            if (controls.Player.Rotate.IsPressed()) Rotate(); 
             heldObj.transform.position = Vector3.Lerp(heldObj.transform.position, holdPoint.position, Time.deltaTime * 5);
 
             float speedMult = 5;
@@ -114,5 +115,11 @@ public class PlayerInteract : MonoBehaviour
         heldObj = null;
         targetRb = null;
         rotateToNormal = false;
+    }
+
+    public void Rotate()
+    {
+        float degreesPerFrame = 30;
+        heldObj.transform.rotation *= Quaternion.AngleAxis(degreesPerFrame * Time.deltaTime, heldObj.transform.up);
     }
 }

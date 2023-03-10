@@ -1,0 +1,9 @@
+newmtl sandbag
+map_Kd wall.jpg
+Kd 0.7830189 0.7360078 0.5207815
+d 1
+
+newmtl White
+Kd 1 1 1
+d 1
+

@@ -38,10 +38,13 @@ public class UIManager : MonoBehaviour
             activeMenu.SetActive(true);
             openMenu = true;
             postProcess.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
-            ReferencesManager.Instance.mouseLook.enabled = false;
-            ReferencesManager.Instance.movement.enabled = false;
-            ReferencesManager.Instance.interaction.enabled = false;
+            if(ReferencesManager.Instance != null)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                ReferencesManager.Instance.mouseLook.enabled = false;
+                ReferencesManager.Instance.movement.enabled = false;
+                ReferencesManager.Instance.interaction.enabled = false;
+            }
         }
         else
         {
@@ -49,10 +52,13 @@ public class UIManager : MonoBehaviour
             openMenu = false;
             postProcess.SetActive(false);
             activeMenu = null;
-            Cursor.lockState = CursorLockMode.Locked;
-            ReferencesManager.Instance.mouseLook.enabled = true;
-            ReferencesManager.Instance.movement.enabled = true;
-            ReferencesManager.Instance.interaction.enabled = true;
+            if (ReferencesManager.Instance != null)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                ReferencesManager.Instance.mouseLook.enabled = true;
+                ReferencesManager.Instance.movement.enabled = true;
+                ReferencesManager.Instance.interaction.enabled = true;
+            }
         }
         
     }
@@ -63,7 +69,7 @@ public class UIManager : MonoBehaviour
         SettingsData.Current.mouseSensitivity = Mathf.FloorToInt(sensitivitySlider.value);
         
         SerializationManager.SaveSettings("settings", SettingsData.Current);
-        ReferencesManager.Instance.mouseLook.UpdateSettings();
+        if (ReferencesManager.Instance != null) ReferencesManager.Instance.mouseLook.UpdateSettings();
     }
 
     public void ReturnToMainMenu()

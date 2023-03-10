@@ -20,6 +20,7 @@ public class SaveManager : MonoBehaviour
     }
 
 
+
     public void NewSave()
     {
         SerializationManager.DeleteSave("save.save");

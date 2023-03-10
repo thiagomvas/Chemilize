@@ -1,0 +1,8 @@
+newmtl WireBody
+Kd 1 0.3349057 0.3349057
+d 1
+
+newmtl brown
+Kd 0.4528302 0.2326035 0.03203987
+d 1
+

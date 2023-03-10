@@ -22,7 +22,7 @@ MonoBehaviour:
     amount: 3
   outputs: []
   craftTime: 60
-  madeInMachine: {fileID: 0}
+  madeInMachine: {fileID: 11400000, guid: 1cff321d5bbb92a409cd63d24093fcb7, type: 2}
   tree: 0
   levelReq: 0
   isObject: 1

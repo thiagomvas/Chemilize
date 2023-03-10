@@ -60,7 +60,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781170701313315601}
-  m_LocalRotation: {x: -0.00066529785, y: -0.00000028654162, z: 0.00043069664, w: 0.9999997}
+  m_LocalRotation: {x: -0.0006632518, y: 0.0000002836021, z: 0.0004275933, w: 0.9999997}
   m_LocalPosition: {x: -25.20362, y: 0.27900648, z: 7.6742115}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -68,7 +68,7 @@ Transform:
   - {fileID: 1781170701123851812}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.076, y: 0, z: 0.049}
 --- !u!114 &1781170701313315611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1299,7 +1299,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2546
+  m_VersionIndex: 2567
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1412,9 +1412,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 879ee99d257f8b442b8dd8bda9c3a879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data:
+    index: -2
+    id: -2
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+    settingsIndex: 0
+    stored: 0
+  infotm: {fileID: 0}
   RandomizeOutputs: 1
+  automaticOutput: 1
+  clickToGenerate: 0
   baseDelay: 15
   generatePoint: {fileID: 1781170701123851812}
   outputIndex: 0
   outputs:
   - {fileID: 11400000, guid: d3d7645eb1a3f714a8eb93d691c890ef, type: 2}
+  - {fileID: 11400000, guid: 93a42c87db9d3dc44be6f686dafe85a9, type: 2}

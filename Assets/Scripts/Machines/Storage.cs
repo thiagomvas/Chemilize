@@ -77,6 +77,7 @@ public class Storage : MonoBehaviour, IInteractable, IObject, IGrabbable
     }
     private void UpdateData()
     {
+        if (objectData.index < 0) return;
         SaveData.Current.objects[objectData.index].position = this.transform.position;
         SaveData.Current.objects[objectData.index].rotation = this.transform.rotation;
     }

@@ -15,10 +15,10 @@ MonoBehaviour:
   id: 16
   symbol: Si
   name: Silicon
-  sellValue: 35
+  sellValue: 15
   buyCost: 75
   cpkHexColor: {r: 0.9411765, g: 0.78431374, b: 0.627451, a: 1}
-  glasswarePrefab: {fileID: 0}
+  glasswarePrefab: {fileID: 3145865508871297439, guid: 922f789e20526da4fa87d7e17382b011, type: 3}
   glow: 0
   metallic: 0
   standardState: 0

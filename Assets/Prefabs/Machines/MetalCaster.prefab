@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 8685003281369813870}
   - component: {fileID: 5017339160725667480}
   - component: {fileID: 8814399216165029989}
+  - component: {fileID: -8981591103454937002}
   m_Layer: 0
   m_Name: MetalCaster
   m_TagString: Untagged
@@ -249,6 +250,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.24238205, y: 0.30784953, z: 0.024791718}
   m_Center: {x: 0.0028095245, y: -0.025537193, z: 0.17}
+--- !u!114 &-8981591103454937002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059132176444385085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 0, g: 1, b: 0.91210127, a: 0.62352943}
+  outlineWidth: 5
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &2451188543524790581
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +514,7 @@ GameObject:
   - component: {fileID: 5570590286595667826}
   - component: {fileID: 5570590286595667828}
   - component: {fileID: 5570590286595667829}
+  - component: {fileID: 6511306459868482470}
   m_Layer: 0
   m_Name: Lid
   m_TagString: Untagged
@@ -567,6 +587,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6511306459868482470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5570590286595667827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &5570590286604765307
 GameObject:
   m_ObjectHideFlags: 0

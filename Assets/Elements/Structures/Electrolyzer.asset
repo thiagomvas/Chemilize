@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Electrolyzer
   m_EditorClassIdentifier: 
   purchaseable: 0
-  id: 9999
-  prefab: {fileID: 0}
+  id: 7
+  prefab: {fileID: 3957797844871174261, guid: a5ab10be0eb7135438b793461795953a, type: 3}
   name: Electrolyzer
   cost: 0
   energyCost: 0

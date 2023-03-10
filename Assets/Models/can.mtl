@@ -1,0 +1,9 @@
+newmtl Lit
+Kd 0.5 0.5 0.5
+d 1
+
+newmtl Brick
+map_Kd wall.jpg
+Kd 0.3018868 0.09825561 0.09825561
+d 1
+

@@ -28,6 +28,8 @@ public class SettingsData
 
 
     //Data i wish to save
-    public int mouseSensitivity;
+    public int mouseSensitivity = 50;
+    public bool bloomEnabled = true;
+    public bool motionBlurEnabled = true;
 
 }

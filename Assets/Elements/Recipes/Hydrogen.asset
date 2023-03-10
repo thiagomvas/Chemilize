@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 827d6487c99326744b1b9b505a0faaae, type: 3}
-  m_Name: AlluminumAlloy
+  m_Name: Hydrogen
   m_EditorClassIdentifier: 
-  displayName: Aluminum Alloy
+  displayName: Hydrogen
   items:
-  - element: {fileID: 11400000, guid: c70e7d7e00c5cfb4eafc751c10c7bf45, type: 2}
-    amount: 3
-  outputs:
-  - element: {fileID: 11400000, guid: f2e84a556e5409742ada51e4aeb892c2, type: 2}
+  - element: {fileID: 11400000, guid: 9e0867e447416fa4a8f95fd50f510efd, type: 2}
     amount: 1
-  craftTime: 30
-  madeInMachine: {fileID: 11400000, guid: 7f8267baaa042694c8e63a5d6f79fda4, type: 2}
+  outputs:
+  - element: {fileID: 11400000, guid: 7455efbbb4511fb4b849052b8ab851de, type: 2}
+    amount: 1
+  craftTime: 5
+  madeInMachine: {fileID: 11400000, guid: 066aba0f2b5af7545aae87bf3e31c7ad, type: 2}
   tree: 0
   levelReq: 0
   isObject: 0

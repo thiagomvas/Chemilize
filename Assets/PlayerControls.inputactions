@@ -196,17 +196,6 @@
                 },
                 {
                     "name": "",
-                    "id": "f1e1485d-b8dc-4195-a2b5-085e589ba9d1",
-                    "path": "<Keyboard>/m",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "OpenBuildMenu",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "6d31c8ea-e902-4a43-ab32-03241702c364",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
@@ -224,28 +213,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "QuickSave",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "4233ae42-c55f-4f69-809c-c9efc4fdfbd1",
-                    "path": "<Keyboard>/b",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "BuildingTool",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "86d17cba-fcd9-4b3e-bdf2-3bd4b0a7aa4f",
-                    "path": "<Keyboard>/n",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "GuideMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

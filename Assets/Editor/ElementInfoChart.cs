@@ -15,6 +15,8 @@ public class ElementInfoChart : EditorWindow
     Vector2 scrollPos;
     private List<ElementSO> elements = new List<ElementSO>();
     private List<RecipeSO> recipes = new List<RecipeSO>();
+    private List<StructureSO> structures = new List<StructureSO>();
+    private ReferencesSO references;
     [MenuItem("Chemilize/Elements Info")]
     public static void OpenWindow()
     {
@@ -28,6 +30,9 @@ public class ElementInfoChart : EditorWindow
             elements = SOUtils.FindAllOfType<ElementSO>("t:ElementSO", "Assets/Elements");
             elements = elements.OrderBy(x => x.id).ToList();
             recipes = SOUtils.FindAllOfType<RecipeSO>("t:RecipeSO", "Assets/Elements");
+            structures = SOUtils.FindAllOfType<StructureSO>("t:StructureSO", "Assets/Elements");
+
+            references = SOUtils.FindAllOfType<ReferencesSO>("t:ReferencesSO", "Assets/Elements")[0];
         }
         if (GUILayout.Button("Update IDs"))
         {
@@ -42,22 +47,20 @@ public class ElementInfoChart : EditorWindow
         }
         if (GUILayout.Button($"Update References Manager"))
         {
-            if (Selection.activeGameObject.TryGetComponent<ReferencesManager>(out ReferencesManager rm))
+
+            EditorUtility.SetDirty(references);
+            structures = structures.OrderBy(x => x.id).ToList();
+
+            for (int i = 0; i < structures.Count; i++)
             {
-                rm.elements = elements;
-
-                List<StructureSO> st = SOUtils.FindAllOfType<StructureSO>("t:StructureSO", "Assets/Elements");
-                st = st.OrderBy(x => x.id).ToList();
-
-                for (int i = 0; i < st.Count; i++)
-                {
-                    EditorUtility.SetDirty(st[i]);
-                    st[i].id = i;
-                }
-                rm.structures = st;
-                rm.recipes = recipes;
-                SaveChanges();
+                EditorUtility.SetDirty(structures[i]);
+                structures[i].id = i;
             }
+            references.elements = elements;
+            references.structures = structures;
+            references.recipes = recipes;
+            SaveChanges();
+            
 
         }
 
@@ -128,3 +131,15 @@ public class ElementInfoChart : EditorWindow
         base.SaveChanges();
     }
 }
+
+    public static class SOUtils
+    {
+
+        public static List<T> FindAllOfType<T>(string filter, string folder = "Assets")
+            where T : ScriptableObject
+        {
+            return AssetDatabase.FindAssets(filter, new[] { folder })
+                .Select(guid => AssetDatabase.LoadAssetAtPath<T>(AssetDatabase.GUIDToAssetPath(guid)))
+                .ToList();
+        }
+    }

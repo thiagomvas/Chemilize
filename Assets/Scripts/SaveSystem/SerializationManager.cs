@@ -64,6 +64,7 @@ public static class SerializationManager
 
         File.Delete(dir + saveName);
         SaveData.Current = new SaveData();
+        SaveGame("save", SaveData.Current);
         if (!File.Exists(dir + saveName)) return true;
         else return false;
     }

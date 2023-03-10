@@ -68,8 +68,6 @@ public class PlayerInputManager : MonoBehaviour
         UIManager.Instance.ToggleMenu(UIManager.Instance.pauseMenu);
         Cursor.lockState = gamePaused ? CursorLockMode.None : CursorLockMode.Locked;
         Time.timeScale = gamePaused ? 0f : 1f ;
-        ml.UpdateSettings();
-
     }
 
     private void OnEnable()

@@ -22,6 +22,7 @@ MonoBehaviour:
   - element: {fileID: 11400000, guid: a9f5adc92716d1b488125a8309bc39b0, type: 2}
     amount: 1
   craftTime: 30
+  madeInMachine: {fileID: 11400000, guid: 1cff321d5bbb92a409cd63d24093fcb7, type: 2}
   tree: 0
   levelReq: 0
   isObject: 0

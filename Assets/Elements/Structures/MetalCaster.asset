@@ -21,4 +21,4 @@ MonoBehaviour:
   icon: {fileID: 0}
   damage: 0
   tree: 0
-  levelReq: 2
+  levelReq: 0

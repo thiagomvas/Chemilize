@@ -1,0 +1,22 @@
+newmtl Prototype_512x512_Olive
+bump prototype_512x512_normal.png
+map_Kd prototype_512x512_green2.png
+Kd 1 1 1
+d 0
+
+newmtl Gray
+Kd 0.1886792 0.1886792 0.1886792
+d 1
+
+newmtl redGlow
+Kd 1 0 0
+d 1
+
+newmtl greenGlow_1
+Kd 1 0.3539116 0
+d 1
+
+newmtl greenGlow
+Kd 0 1 0.3510609
+d 1
+

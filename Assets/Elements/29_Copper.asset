@@ -15,8 +15,8 @@ MonoBehaviour:
   id: 8
   symbol: Cu
   name: Copper
-  sellValue: 10
-  buyCost: 20
+  sellValue: 25
+  buyCost: 50
   cpkHexColor: {r: 0.78431374, g: 0.5019608, b: 0.2, a: 1}
   glasswarePrefab: {fileID: 3145865508871297439, guid: 922f789e20526da4fa87d7e17382b011, type: 3}
   glow: 0

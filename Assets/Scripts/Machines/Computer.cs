@@ -101,6 +101,7 @@ public class Computer : MonoBehaviour, IInteractable
 
         io.objectData = SaveData.Current.objects[SaveData.Current.objects.Count - 1];
 
+        Debug.Log(SaveData.Current.objects.Count);
     }
 
     public void Interact() => UIManager.Instance.ToggleMenu(UIManager.Instance.computerMenu);

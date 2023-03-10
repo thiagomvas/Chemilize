@@ -15,8 +15,8 @@ MonoBehaviour:
   id: 2
   symbol: Li
   name: Lithium
-  sellValue: 20
-  buyCost: 10
+  sellValue: 10
+  buyCost: 25
   cpkHexColor: {r: 0.8, g: 0.5019608, b: 1, a: 1}
   glasswarePrefab: {fileID: 3145865508871297439, guid: 922f789e20526da4fa87d7e17382b011, type: 3}
   glow: 0

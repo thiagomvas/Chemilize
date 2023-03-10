@@ -18,7 +18,7 @@ MonoBehaviour:
   sellValue: 100
   buyCost: 250
   cpkHexColor: {r: 0, g: 0, b: 0, a: 0}
-  glasswarePrefab: {fileID: 0}
+  glasswarePrefab: {fileID: 4230761380590342696, guid: 6f00a6f830f1a6e42976db4de1c13f77, type: 3}
   glow: 0
   metallic: 0
   standardState: 0

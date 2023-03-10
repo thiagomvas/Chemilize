@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 1372883805954167331}
   - component: {fileID: 5051039072327545998}
   - component: {fileID: 6089808364199555222}
+  - component: {fileID: 8500431414455388270}
   m_Layer: 0
   m_Name: Jar
   m_TagString: Untagged
@@ -163,6 +164,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.3, z: 0.2}
   m_Center: {x: 0, y: 0.049999997, z: 0}
+--- !u!114 &8500431414455388270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3516359054223551373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 0, g: 1, b: 0.118306875, a: 1}
+  outlineWidth: 5
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &4411048146435554241
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +195,6 @@ GameObject:
   - component: {fileID: 8241856924124843210}
   - component: {fileID: 5807971481939358958}
   - component: {fileID: 262517594495419070}
-  - component: {fileID: 9209916547627763229}
   m_Layer: 0
   m_Name: liquid
   m_TagString: Untagged
@@ -2435,20 +2453,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4411048146435554241}
-  m_Mesh: {fileID: 0}
---- !u!64 &9209916547627763229
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4411048146435554241}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!1 &8114571350836706634
 GameObject:
