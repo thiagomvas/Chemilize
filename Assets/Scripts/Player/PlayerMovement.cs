@@ -78,7 +78,9 @@ public class PlayerMovement : MonoBehaviour
         float prevMoveMag;
 
         //Speed cap
-        rb.velocity = new Vector3(Mathf.Clamp(rb.velocity.x, -maxSpeed, maxSpeed), Mathf.Clamp(rb.velocity.y, -50f, jumpForce), Mathf.Clamp(rb.velocity.z, -maxSpeed, maxSpeed));
+        rb.velocity = new Vector3(Mathf.Clamp(rb.velocity.x, -maxSpeed, maxSpeed), 
+                                    Mathf.Clamp(rb.velocity.y, -50f, jumpForce), 
+                                    Mathf.Clamp(rb.velocity.z, -maxSpeed, maxSpeed));
 
 
 
@@ -87,7 +89,9 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector3 moveDir = transform.right * movement.x + transform.forward * movement.z;
             //rb.AddForce(moveDir * movementSpeed);
-            if(canJump) rb.velocity = new Vector3(moveDir.x * movementSpeed, rb.velocity.y, moveDir.z * movementSpeed);
+            if(canJump) rb.velocity = new Vector3(moveDir.x * movementSpeed, 
+                                                    rb.velocity.y, 
+                                                    moveDir.z * movementSpeed);
             else rb.AddForce(moveDir * movementSpeed);
 
             prevMoveMag = rb.velocity.magnitude; 
