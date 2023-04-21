@@ -363,6 +363,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3957797844871174262}
   - component: {fileID: 5315141908255269199}
+  - component: {fileID: 4422009442846304231}
+  - component: {fileID: 6080276539049484417}
   - component: {fileID: 8584681933438634962}
   - component: {fileID: 8082398558611023737}
   - component: {fileID: 5455213386244460884}
@@ -410,8 +412,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   so: {fileID: 11400000, guid: 066aba0f2b5af7545aae87bf3e31c7ad, type: 2}
   auto: 0
-  recipeTM: {fileID: 1554080127394684923}
-  progressTM: {fileID: 4329154655418504429}
   data:
     index: -2
     id: -2
@@ -420,9 +420,37 @@ MonoBehaviour:
     settingsIndex: 0
     stored: 0
   spawnPoint: {fileID: 8861959589107969406}
-  basePrefab: {fileID: 0}
-  selectedRecipe: {fileID: 0}
   slots: []
+--- !u!114 &4422009442846304231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3957797844871174261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bb3264b93e052499cefb113be21f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crafter: {fileID: 5315141908255269199}
+  craftingSFX: {fileID: 8300000, guid: 5058943c70621624aadaba94e060835f, type: 3}
+  craftedSFX: {fileID: 8300000, guid: b41409e4cc3b2ef44b2e3132e27fdca3, type: 3}
+--- !u!114 &6080276539049484417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3957797844871174261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c22e2bae7f94ab409aba46ca48def1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crafter: {fileID: 5315141908255269199}
+  progressTm: {fileID: 1554080127394684923}
+  recipeTm: {fileID: 4329154655418504429}
 --- !u!54 &8584681933438634962
 Rigidbody:
   m_ObjectHideFlags: 0

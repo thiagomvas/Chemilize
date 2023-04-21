@@ -12,7 +12,6 @@ public class PlayerInputManager : MonoBehaviour
     [SerializeField] private UIManager um;
     PlayerControls controls;
     MouseLook ml;
-    [SerializeField] private TextMeshProUGUI tmpro;
     [SerializeField] private GameObject guideMenu;
     bool gamePaused = false;
 
@@ -24,11 +23,11 @@ public class PlayerInputManager : MonoBehaviour
     }
     private void Start()
     {
-        ml = tool.GetComponent<MouseLook>();
+        ml = GetComponentInChildren<MouseLook>();
     }
     private void Update()
     {
-        tmpro.text = $"Cash: ${SaveData.Current.currency}";
+
     }
 
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,25 +13,27 @@ public class Crafter : MonoBehaviour, IInteractable, IObject, IGrabbable
     public ObjectData objectData
     {
         get { return data; }
-        set { data = value;}
+        set { data = value; }
     }
-    [SerializeField] private TextMeshProUGUI recipeTM;
-    [SerializeField] private TextMeshProUGUI progressTM;
     [SerializeField] private ObjectData data;
     [SerializeField] private Transform spawnPoint;
-    [SerializeField] private GameObject basePrefab;
     private List<RecipeSO> recipes = new List<RecipeSO>();
-    [SerializeField] private RecipeSO selectedRecipe;
+    [HideInInspector] public RecipeSO selectedRecipe { get; private set; }
 
-    [SerializeField] private List<StoredItems> slots = new List<StoredItems>();
-    string missingItem;
+    [HideInInspector] public List<StoredItems> slots = new List<StoredItems>();
+
+    public Action onCraftStart;
+    public Action onCraftEnd;
+    public Action onUIUpdate;
 
     float nextCraft;
     bool hasResourcesToCraft = false;
-    bool isCrafting = false;
+    public bool isCrafting { get; private set; }
+    public int progress { get; private set; }
     int speedMultiplier = 1; 
     private void Start()
     {
+        isCrafting = false;
         foreach(RecipeSO recipe in ReferencesManager.Instance.recipes)
         {
             if (recipe.madeInMachine == so) recipes.Add(recipe);
@@ -48,7 +51,6 @@ public class Crafter : MonoBehaviour, IInteractable, IObject, IGrabbable
     {
         if (SaveData.Current.productionEfficiencyLevel == 1) speedMultiplier = 2;
         else if (SaveData.Current.productionEfficiencyLevel == 5) speedMultiplier = 4;
-        UpdateText();
         if (!isAutomatic) return;
         if (isAutomatic && ReferencesManager.Instance.timer >= nextCraft && hasResourcesToCraft)
         {
@@ -72,16 +74,10 @@ public class Crafter : MonoBehaviour, IInteractable, IObject, IGrabbable
         UpdateSelection(index + 1 >= recipes.Count ? 0 : index + 1);
         CheckForCraft();
     }
-    private void UpdateText()
-    {
-        if (!hasResourcesToCraft) progressTM.text = missingItem;
-        else if (!isCrafting) progressTM.text = "Interact to craft.";
-    }
     public void UpdateSelection(int index)
     {
         slots.Clear();
         int x = index;
-        int cycles = 0;
         bool recipeUnlocked = false;
         while(recipeUnlocked != true)
         {
@@ -112,25 +108,24 @@ public class Crafter : MonoBehaviour, IInteractable, IObject, IGrabbable
             slots.Add(new StoredItems(selectedRecipe.items[i].element));
         }
         string name = selectedRecipe.isObject ? selectedRecipe.objectOutput.name : selectedRecipe.displayName;
-        recipeTM.text = $"Selected: {name}";
     }
     private void CheckForCraft()
     {
-        missingItem = "";
         hasResourcesToCraft = true;
         for (int i = 0; i < slots.Count; i++)
         {
             if (slots[i].amount < selectedRecipe.items[i].amount)
             {
                 hasResourcesToCraft = false;
-                missingItem += $"{selectedRecipe.items[i].amount - slots[i].amount}x {slots[i].item.name}\n";
             }
         }
+        onUIUpdate?.Invoke();
     }
     private IEnumerator Craft()
     {
+        onCraftStart?.Invoke();
         isCrafting = true;
-        int progress = 0;
+        progress = 0;
         for (int i = 0; i < slots.Count; i++)
         {
             slots[i].amount -= selectedRecipe.items[i].amount;
@@ -139,8 +134,8 @@ public class Crafter : MonoBehaviour, IInteractable, IObject, IGrabbable
         while (progress < 100)
         {
             yield return new WaitForSeconds(selectedRecipe.craftTime * 0.01f);
+            onUIUpdate?.Invoke();
             progress++;
-            progressTM.text = $"{progress}%";
         }
 
         if(!selectedRecipe.isObject)
@@ -175,6 +170,10 @@ public class Crafter : MonoBehaviour, IInteractable, IObject, IGrabbable
         isCrafting = false;
 
         if(so)SaveData.Current.energyUnits -= so.energyCost;
+
+        onCraftEnd?.Invoke();
+
+        onUIUpdate?.Invoke();
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -192,8 +191,6 @@ public class Crafter : MonoBehaviour, IInteractable, IObject, IGrabbable
             }
         }
     }
-
-
     private void UpdateData()
     {
         if (objectData.index < 0) return;

@@ -33,6 +33,7 @@ public class PlayerInteract : MonoBehaviour
         foreach (RaycastHit hit in hits)
         {
             Collider[] cols = Physics.OverlapSphere(hit.point, 0.01f);
+            if (cols[0] == null) continue;
             if (cols[0].transform.TryGetComponent<IInteractable>(out interactable)) break;
         }
         foreach (RaycastHit hit in hits)
@@ -51,6 +52,12 @@ public class PlayerInteract : MonoBehaviour
             //Secondary Interact
             if (controls.Player.SecondaryInteract.WasPerformedThisFrame() 
                 && !PlayerInputManager.Instance.BuildingToolOn) interactable.SecondaryInteract();
+
+            if(controls.Player.Scroll.ReadValue<float>() != 0)
+            {
+                float x = controls.Player.Scroll.ReadValue<float>();
+                Debug.Log((int)Mathf.Clamp(x, -1f, 1f));
+            }
         }
 
         //Grab

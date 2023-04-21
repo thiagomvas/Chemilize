@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class ContractorUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private TextMeshProUGUI textField;
+    [SerializeField] private Contractor cont;
+    private void Awake()
     {
-        
+        cont.onNewContract += UpdateUI;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateUI()
     {
-        
+        textField.text = $"Current Contract:{cont.contractElement.name} for {Mathf.FloorToInt(cont.reward)}";
     }
 }

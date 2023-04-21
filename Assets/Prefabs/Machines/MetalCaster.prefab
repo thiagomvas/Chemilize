@@ -94,6 +94,8 @@ GameObject:
   m_Component:
   - component: {fileID: 21600835322096752}
   - component: {fileID: 9141504666520465530}
+  - component: {fileID: 7612120457853767110}
+  - component: {fileID: 725018380759557114}
   - component: {fileID: 2824004842628641867}
   - component: {fileID: 2863186344981416104}
   - component: {fileID: 3443231560954535448}
@@ -143,8 +145,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   so: {fileID: 11400000, guid: affa02e4e25eff24292fae9887ea4ee6, type: 2}
   auto: 0
-  recipeTM: {fileID: 834179931288816965}
-  progressTM: {fileID: 871286120702553018}
   data:
     index: -2
     id: -2
@@ -153,9 +153,37 @@ MonoBehaviour:
     settingsIndex: 0
     stored: 0
   spawnPoint: {fileID: 1216649863514041592}
-  basePrefab: {fileID: 0}
-  selectedRecipe: {fileID: 11400000, guid: 0840ddf144310cf49835f455bc5883a1, type: 2}
   slots: []
+--- !u!114 &7612120457853767110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059132176444385085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bb3264b93e052499cefb113be21f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crafter: {fileID: 9141504666520465530}
+  craftingSFX: {fileID: 8300000, guid: 5058943c70621624aadaba94e060835f, type: 3}
+  craftedSFX: {fileID: 8300000, guid: b41409e4cc3b2ef44b2e3132e27fdca3, type: 3}
+--- !u!114 &725018380759557114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059132176444385085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c22e2bae7f94ab409aba46ca48def1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crafter: {fileID: 9141504666520465530}
+  progressTm: {fileID: 871286120702553018}
+  recipeTm: {fileID: 834179931288816965}
 --- !u!65 &2824004842628641867
 BoxCollider:
   m_ObjectHideFlags: 0

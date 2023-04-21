@@ -14,7 +14,7 @@ public class LightSwitch : MonoBehaviour, IInteractable
         {
             light.enabled = isOn;
         }
-        SFXManager.Instance.PlayEffect(sfx, true);
+        SFXManager.Instance.PlayEffect(sfx, transform.position, true);
         isOn = !isOn;
     }
 
