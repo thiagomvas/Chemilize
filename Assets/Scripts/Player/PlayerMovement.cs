@@ -46,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
         //ControlDrag();
     }
 
+    //Adds a hover force to stay at a distance defined by desiredHeight from the ground, applying  
     private void Hover()
     {
         RaycastHit hit;
@@ -54,12 +55,15 @@ public class PlayerMovement : MonoBehaviour
 
         if (hit.collider != null)
         {
+            //Calculate the spring force needed to simulate a "bouncy" feel from landing at higher speed
+            //Also used to keep the player at the desired height
             float x = desiredHeight - hit.distance;
             float springForce = (x * forceMult) - (desiredHeight * rb.velocity.y);
+            
             Debug.DrawLine(this.transform.position, transform.position + Vector3.down * desiredHeight, Color.yellow);
-
+            
+            //Applies the spring force at a different strength depending on distance
             rb.AddForce(Vector3.up * springForce * (desiredHeight / Vector3.Distance(hit.point, this.transform.position)));
-
             maxSpeed = maxGroundVelo;
 
         }
@@ -77,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
         movement = new Vector3(input.x, 0f, input.y);
         float prevMoveMag;
 
-        //Speed cap
+        //Speed cap set in the inspector
         rb.velocity = new Vector3(Mathf.Clamp(rb.velocity.x, -maxSpeed, maxSpeed), 
                                     Mathf.Clamp(rb.velocity.y, -50f, jumpForce), 
                                     Mathf.Clamp(rb.velocity.z, -maxSpeed, maxSpeed));
