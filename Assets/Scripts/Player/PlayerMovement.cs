@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         //ControlDrag();
     }
 
-    //Adds a hover force to stay at a distance defined by desiredHeight from the ground, applying  
+    //Adds a hover force to stay at a distance defined by desiredHeight from the ground
     private void Hover()
     {
         RaycastHit hit;
